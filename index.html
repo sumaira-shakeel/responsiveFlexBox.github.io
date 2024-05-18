@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flexbox{
+            display: flex;
+            background-color: tomato;
+            height: 100vh;
+            flex-direction: column;
+
+            /* flex-flow: row wrap; */
+
+
+            
+
+            
+       
+
+        }
+        .items{
+            background: purple;
+            font-size: 1rem;
+            color: white;
+            border: 2px solid purple;
+            flex:1;
+            margin: 5px;
+
+        }
+        .item1{
+            background: deepskyblue;
+            flex: 1;
+
+        }
+        .item2{
+            background: lightgreen;
+            width: 700px;
+            height: 100px;
+            flex: 1;
+        }
+        .item3{
+            background: gold;
+            width: 100px;
+            flex-direction: column;
+            flex: 6;
+        }
+        .item4{
+            background: rgba(216, 191, 216, 0.266);
+            width: 100px;
+            flex-direction:column;
+            flex: 7;
+
+        }
+        .item5{
+            background: magenta;
+            width: 100px;
+            flex-direction: column-reverse;
+            flex-grow: 5;
+
+            
+        }
+        .item6{
+            background: orangered;
+            align-items: center;
+            width: 500px;
+            display: flex;
+                    }
+        .item7{
+            background: lightpink;
+            flex: 2;
+            
+        }
+        .item8{
+            background: blueviolet;
+            flex: 1;
+            width: 500px;
+        }
+
+
+            </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="items item1">item1</div>
+        <div class="items item2">item2</div>
+        <div class="items item3">item3</div>
+        <div class="items item4">item4</div>
+        <div class="items item5">item5</div>
+        <div class="items item6">item6</div>
+        <div class="items item7">item7</div>
+        <div class="items item8">item8</div>
+        
+    </div>
+    
+</body>
+</html>

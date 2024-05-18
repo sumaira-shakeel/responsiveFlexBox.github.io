@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wraper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    background-color: gray;
+}
+.wraper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+
+}
+ .Head{
+    background: tomato;
+    height: 120px;
+
+}
+.footer{
+    background: lightgreen;
+    height: 80px;
+}
+.main{
+    text-align: left;
+    background-color: deepskyblue;
+    height: 300px;
+    font-size: 24px;
+    }
+    .aside1{
+        background:gold ;
+
+    }
+    .aside2{
+        background:hotpink;
+        
+    }
+    @media all and (min-width :800px){
+
+
+        .main{
+            flex: 3;
+        }
+        .aside1{
+            order: 1;
+        }
+        .aside2{
+            order: 2;
+        }
+        .main{
+            order: 2;
+        }
+        .footer{
+            order: 4;
+
+        }
+
+    }
+    @media all and (min-width:600px){
+        .aside{
+            flex: 1;
+        }
+    }
+
+
+    </style>
+  
+</head>
+<body>
+    <div class="wraper">
+        <header class="
+        Head">
+            <h1>Header</h1>
+        </header>
+            <artical class="main">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi quos illum modi, atque error dicta placeat officiis fuga asperiores numquam vitae, iste quo expedita eveniet non, dolorum facilis recusandae!</p>
+            </artical>
+            <aside class="aside aside1">
+                <h1>A side1</h1>
+            </aside>
+            <aside class="aside aside2">
+                <h1>A side2</h1>
+            </aside>
+            <footer class="footer">
+                <h1>Footer</h1>
+            </footer>
+    </div>
+    
+</body>
+</html>

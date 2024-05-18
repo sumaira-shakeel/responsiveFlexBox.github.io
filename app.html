@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .wraper{
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+        }
+        .wraper>*{
+            padding: 10px;
+            margin: 10px;
+            flex: 1 100%;
+            border-radius: 10px;
+        }
+        .header{
+            background: tomato;
+            height: 120px;
+
+        }
+        .navbar{
+            background: plum;
+            height: 80px;
+        }
+        .footer{
+            background: skyblue;
+            height: 80px;
+        }
+        .main{
+            background: greenyellow;
+            height: 300px;
+            padding: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+      .aside1{
+        background: gold;
+
+
+        }
+        @media all and (min-width:800px){
+            .main{
+                flex: 2;
+            }
+            .aside1{
+                order: 2;
+            }
+            .main{
+                order: 1;
+            }
+            footer{
+                order:4;
+
+
+            }
+        }
+       @media all and (min-width: 600px){
+        .aside1{
+            flex: 1;
+            
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <header class="header">
+            <h1>Head</h1>
+        </header>
+        <nav class="navbar">
+            <h1>NavigationBar</h1>
+        </nav>
+        <artical class="main">
+            <h1>Main content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id, impedit dicta nulla, dignissimos illo voluptatibus velit accusamus fugit aspernatur minima magnam at voluptatem! Porro delectus placeat veritatis illo numquam!</p>
+        </artical>
+        <aside class="aside aside1">
+        <h1>Aside 1</h1>
+    </aside>
+    <footer class="footer">
+        <h1>Footer</h1>
+    </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+
+.wraper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wraper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+
+}
+.haeder{
+    background: tomato;
+    height: 120px;
+
+}
+.footer{
+    background: lightgreen;
+    height: 80px;
+}
+.main{
+    text-align: left;
+    background: deepskyblue;
+    
+
+}
